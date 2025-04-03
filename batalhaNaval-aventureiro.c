@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 // Desafio Batalha Naval - MateCheck
 // Este código inicial serve como base para o desenvolvimento do sistema de Batalha Naval.
@@ -44,7 +45,8 @@ static void posicionarNavioDiagonalmenteEm(int tabuleiro[tabuleiroTamanhoX][tabu
 
 void desafioAventureiro() {
     // Nível Aventureiro - Expansão do Tabuleiro e Posicionamento Diagonal
-    int tabuleiro[tabuleiroTamanhoX][tabuleiroTamanhoY] = {};
+    int tabuleiro[tabuleiroTamanhoX][tabuleiroTamanhoY];
+    memset(tabuleiro, 0, sizeof(tabuleiro));
 
     posicionarNavioEm(tabuleiro, 0, 0, 5, 1); //Navio posicionado horizontalmente
     posicionarNavioEm(tabuleiro, 4, 1, 1, 4); //Navio posicionado verticalmente

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 // Desafio Batalha Naval - MateCheck
 // Este código inicial serve como base para o desenvolvimento do sistema de Batalha Naval.
@@ -78,7 +79,8 @@ static void posicionarCruzEm(int tabuleiro[tabuleiroTamanhoX][tabuleiroTamanhoY]
 
 void desafioMestre() {
     // Nível Mestre - Habilidades Especiais com Matrizes
-    int tabuleiro[tabuleiroTamanhoX][tabuleiroTamanhoY] = {};
+    int tabuleiro[tabuleiroTamanhoX][tabuleiroTamanhoY];
+    memset(tabuleiro, 0, sizeof(tabuleiro));
 
     posicionarCruzEm(tabuleiro, 2, 0);
     posicionarOctaedroEm(tabuleiro, 8, 0);
