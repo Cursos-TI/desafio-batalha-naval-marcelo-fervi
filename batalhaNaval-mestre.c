@@ -82,9 +82,9 @@ void desafioMestre() {
     int tabuleiro[tabuleiroTamanhoX][tabuleiroTamanhoY];
     memset(tabuleiro, 0, sizeof(tabuleiro));
 
-    posicionarCruzEm(tabuleiro, 2, 0);
-    posicionarOctaedroEm(tabuleiro, 8, 0);
-    posicionarConeEm(tabuleiro, 5, 6);
+    posicionarCruzEm(tabuleiro, 2, 0); //Cruz no topo esquerdo
+    posicionarOctaedroEm(tabuleiro, 8, 0); //Octaedro no topo direito
+    posicionarConeEm(tabuleiro, 5, 6); //Cone embaixo no centro
 
     printf("Tabuleiro atual:\n");
     exibirTabuleiro(tabuleiro);
